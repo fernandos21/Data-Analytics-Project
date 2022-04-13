@@ -1,2 +1,2 @@
-# Data-Analytics-Project
-Thelook Ecommerce Case Study
+# Thelook Ecommerce Case Study
+## Introduction
