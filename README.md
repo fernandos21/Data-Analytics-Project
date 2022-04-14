@@ -16,7 +16,10 @@ Three questions will guide the future marketing program:
 - R studio to analyze and make data visualization.
 - Tableau to make interactive dashboard
 ### Data Cleaning Process
+- Combine two tables, there are the orders table and the users table into one table
+- Select multiple columns as needed to answer questions from the two columns to be combined
 ```
+Create table `shining-haiku-345911.thelook_ecommerce.project` AS
 SELECT
     order_id,
     user_id,
@@ -33,6 +36,36 @@ INNER JOIN
     `bigquery-public-data.thelook_ecommerce.users` u
 ON o.user_id = u.id
 ```
+![Preview Data 1](https://user-images.githubusercontent.com/103189217/163342106-c95ce682-b27e-42dd-8a7b-caaa09385eb2.PNG)
+After combined data was created, we check for null on this data
+```
+SELECT
+    SUM(CASE WHEN order_id IS NULL THEN 1 ELSE 0 END) AS order_id_null,
+    SUM(CASE WHEN user_id IS NULL THEN 1 ELSE 0 END) AS user_id_null,
+    SUM(CASE WHEN status IS NULL THEN 1 ELSE 0 END) AS status_null,
+    SUM(CASE WHEN created_at IS NULL THEN 1 ELSE 0 END) AS created_at_null,
+    SUM(CASE WHEN num_of_item IS NULL THEN 1 ELSE 0 END) AS num_of_item_null,
+    SUM(CASE WHEN age IS NULL THEN 1 ELSE 0 END) AS age_null,
+    SUM(CASE WHEN gender IS NULL THEN 1 ELSE 0 END) AS gender_null,
+    SUM(CASE WHEN country IS NULL THEN 1 ELSE 0 END) AS country_null,
+    SUM(CASE WHEN traffic_source IS NULL THEN 1 ELSE 0 END) AS traffic_source_null
+FROM `shining-haiku-345911.thelook_ecommerce.project
+```
+![Preview Data 2](https://user-images.githubusercontent.com/103189217/163342517-e911964f-0532-4f30-af10-ca6a988ddcc3.PNG)
+From this query, we can know that there is no null value.
+
+Next we check for duplicated data by using order_id as an unique constraint
+```
+SELECT  order_id,
+        COUNT(order_id)
+FROM `shining-haiku-345911.thelook_ecommerce.project` 
+GROUP BY order_id
+HAVING COUNT(order_id) > 1
+```
+![Preview Data 3](https://user-images.githubusercontent.com/103189217/163344912-d2c119d4-6957-4440-aa9a-010fb735fbbb.PNG)
+From this query, we can know that there is no duplicate data
+
+After checking the data, which consists of checking for null values and duplicate data, neither of them was found in the data to be processed so that the data can be said to be clean. Clean data can facilitate the analysis process
 ## ANALYZE
 ## SUMMARY
 ## RECOMMENDATIONS
