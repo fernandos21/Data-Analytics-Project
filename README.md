@@ -1,10 +1,12 @@
 # THELOOK ECOMMERCE CASE STUDY
 ## INTRODUCTION
 ## ASK
-Three questions will guide the future marketing program:
+Three questions will guide improving future sales programs:
 1. What is our biggest customer segment? (Overall, by country, gender, age)
 2. What traffic source is the most effective for us to acquire users?
 3. How is the monthly trend of sales? How Much is the cancellation and refund rate vs the total number of orders?
+
+Business Problem : "How to increase sales in the future by increasing the complete status of the order?"
 ## PREPARE
 - Data is located in this [link](https://drive.google.com/drive/folders/10X9zeO-JUt40rIsY0y_tQwi6AYvqvMLG?usp=sharing)
 - Overall there are 33,639 rows and 24 columns in this data
