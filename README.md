@@ -69,6 +69,8 @@ From this query, we can know that there is no duplicate data
 
 After checking the data, which consists of checking for null values and duplicate data, neither of them was found in the data to be processed so that the data can be said to be clean. Clean data can facilitate the analysis process
 ## ANALYZE
+![Capture1](https://user-images.githubusercontent.com/103189217/163671542-669c5784-b1b1-4d0f-b53e-cf18f1286c8b.PNG)
+
 ![Capture](https://user-images.githubusercontent.com/103189217/163671525-6490f75f-94cc-42e5-8fa5-9ee2af6737cb.PNG)
 
 ## SUMMARY
