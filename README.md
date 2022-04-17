@@ -71,6 +71,12 @@ After checking the data, which consists of checking for null values and duplicat
 ## ANALYZE
 ![Capture1](https://user-images.githubusercontent.com/103189217/163671542-669c5784-b1b1-4d0f-b53e-cf18f1286c8b.PNG)
 
+![Capture 2](https://user-images.githubusercontent.com/103189217/163701407-6a650add-7d4e-4056-985f-a08903dd3070.PNG)
+
+![Capture 4](https://user-images.githubusercontent.com/103189217/163701618-76fa3098-67a6-4843-bd92-f2576fdf9f3c.PNG)
+
+![Capture3](https://user-images.githubusercontent.com/103189217/163701442-ee57853d-0b0a-41a9-a067-1682d8deb5e5.PNG)
+
 ![Capture](https://user-images.githubusercontent.com/103189217/163671525-6490f75f-94cc-42e5-8fa5-9ee2af6737cb.PNG)
 
 ## SUMMARY
